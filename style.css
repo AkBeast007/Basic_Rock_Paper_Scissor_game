@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Itim&family=Kanit:wght@600&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+
+body{
+    background: linear-gradient(to bottom right,#42275a,#734b6d) fixed;  
+    font-size: 60px
+}
+
+#main{
+    height: 100%;
+    width: 100%;
+}
+
+#text{
+    text-align: center;
+    font-size: 40px;
+    font-family: 'Kanit', sans-serif;
+    color: #ffe6ff;
+    text-shadow: 3px 3px 10px pink,1px 1px 10px pink,1px 1px 10px pink;
+}
+
+#intext{
+   font-size: 12px;
+   margin-top: 2px;
+   display: none;
+   font-family: 'Kanit', sans-serif;
+   color: #ffb3ff;
+}
+
+
+#container{
+    height: 50%;
+    width: 50%;
+    margin: auto;
+    margin-top: 80px;
+    margin-bottom: 40px;
+}
+
+#symbols,#scorediv,#resetdiv{
+    width: 100%;
+    display: flex;
+    padding: 10px;
+
+
+}
+
+#rock,#paper,#scissors,#reset{
+    height: 100px;
+    width: 100px;
+    text-align: center;
+    margin: auto;
+    border-radius: 20%;
+}
+
+#rock:hover, #paper:hover, #scissors:hover, #reset:hover{
+    box-shadow: 2px 2px 15px magenta, 2px 2px 15px magenta, 2px 2px 15px magenta;
+    transform: scale(1.1);
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+#rock:hover #intext{
+    display: block;
+}
+
+#paper:hover #intext{
+    display: block;
+}
+
+#scissors:hover #intext{
+    display: block;
+}
+
+#reset:hover #intext{
+    display: block;
+}
+
+#score{
+    height: 100px;
+    width: 100%;
+    text-align: center;
+    margin: auto;
+    box-shadow: 2px 2px 15px magenta, 2px 2px 15px magenta, 2px 2px 15px magenta;
+    border-radius: 10%;
+    font-size: 22px;
+    padding-top: 10px;
+    color: #ff66ff;
+}
+
+#rules{
+    font-size: 20px;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 2px;
+}
+
+#anchor{
+    text-decoration: none;
+    color: #ffb3ff;
+}
